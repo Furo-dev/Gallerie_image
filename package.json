@@ -1,0 +1,15 @@
+{
+  "name": "image-gallery",
+  "version": "1.0.0",
+  "description": "Application projet de gallerie d'imges",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Flo",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2"
+  }
+}

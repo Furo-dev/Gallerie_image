@@ -1,0 +1,87 @@
+#gallery-app {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#image-input {
+  margin-bottom: 20px;
+}
+
+#image-url {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#add-image {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+#gallery .image-item {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-item {
+  transform: scale(0);
+  opacity: 0;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.image-item.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Animation de disparition */
+.image-item.hide {
+  transform: scale(0);
+  opacity: 0;
+}
+
+#gallery .image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#gallery .image-item button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+#gallery .image-item button:hover {
+  opacity: 1;
+}
